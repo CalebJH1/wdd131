@@ -18,10 +18,11 @@ header > nav {
     
 }
 
-header > nav  > p {
+header > nav > a {
     text-align: center;
     font-size: x-large;
     color: white;
+    padding: 2rem 2rem;
 }
 
 .grid {
