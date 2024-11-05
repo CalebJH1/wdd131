@@ -1,0 +1,64 @@
+header > div {
+    background-color: #006eb6;
+    max-width: 100vw;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+header > div > p {
+    color: white;
+    font-size: 50pt;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    
+}
+
+header > nav  > p {
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50vh;
+}
+
+.main-content {
+    background-color: whitesmoke;
+    font-size: x-large;
+}
+
+.main-content > p {
+    margin-left: 1rem;
+}
+
+.aside-content {
+    background-color: antiquewhite;
+    font-size: x-large;
+}
+
+.aside-content > p {
+    margin-left: 1rem;
+}
+
+.footer-content {
+    background-color: black;
+    font-size: x-large;
+    height: 22vh;
+    
+}
+
+.footer-content > p {
+    margin-top: 0;
+    padding-top: 2rem;
+    color: white;
+    text-align: center;
+}
+
