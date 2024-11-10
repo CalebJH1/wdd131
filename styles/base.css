@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.name {
+    color: #fab323;
+}
+
 h1 {
     font-family: "Open Sans", sans-serif;
     font-size: xxx-large;
