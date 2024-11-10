@@ -11,6 +11,11 @@ h1 {
     color: #eeeeee;
 }
 
+h2 {
+    font-family: "Open Sans", sans-serif;
+    color: #eeeeee;
+}
+
 header > div {
     background-color: #24505C;
     width: 100vw;
@@ -89,7 +94,7 @@ hr {
     background-color: #24505C;
 }
 
-.title > h1 {
+.title > h2 {
     margin-block: 0;
     text-align: center;
 }
