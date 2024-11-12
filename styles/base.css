@@ -121,3 +121,23 @@ footer > p {
     text-align: center;
     font-family: "Open Sans", sans-serif;
 }
+
+@media screen and (max-width: 1200px) {
+    .card > p {
+        font-size: 12pt;
+    }
+
+    .washington-flag {
+        width: 80px;
+    }
+
+    .myself {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card > p {
+        font-size: 6pt;
+    }
+}
