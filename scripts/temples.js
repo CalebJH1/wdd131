@@ -4,9 +4,11 @@ let num = 2;
 
 menuButton.addEventListener('click', buttonClicked);
 
+window.addEventListener("resize", displayWindowSize);
+
 function buttonClicked() {
     if (num % 2 == 0) {
-        heading.style.display = "inline";
+        heading.style.display = "block";
         menuButton.textContent = "X";
     }
 
@@ -15,4 +17,15 @@ function buttonClicked() {
         menuButton.textContent = "≡";
     }
     num++;
+}
+
+function displayWindowSize() {
+    const width = document.documentElement.clientWidth;
+    if (width > 1000) {
+        heading.style.display = "none";
+    }
+
+    if (width < 1000 && menuButton.textContent === "X") {
+        heading.style.display = "block";
+    }
 }
