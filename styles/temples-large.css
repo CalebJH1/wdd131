@@ -51,7 +51,7 @@ header a:hover {
     cursor: pointer;
 }
 
-heading {
+.heading {
     display: none;
 }
 

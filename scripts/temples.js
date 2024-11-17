@@ -1,4 +1,4 @@
-let heading = document.querySelector("heading");
+let heading = document.querySelector(".heading");
 let menuButton = document.querySelector(".menu-icon");
 let num = 2;
 
