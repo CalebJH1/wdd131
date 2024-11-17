@@ -6,7 +6,7 @@ menuButton.addEventListener('click', buttonClicked);
 
 function buttonClicked() {
     if (num % 2 == 0) {
-        heading.display = "block";
+        heading.style.display = "inline";
         menuButton.textContent = "X";
     }
 
