@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: xxx-large;
+    color: #eeeeee;
+    display: inline;
+    padding-left: 5vw;
+}
+
+header > div {
+    background-color: #24505C;
+    width: 100vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-right: 5vw;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header a {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    min-width: 10vw;
+    text-align: center;
+    font-size: x-large;
+    padding: 1rem 2vw 1rem 2vw;
+}
+
+header a:hover {
+    background-color: #24505C;
+    color: white;
+}
+
+heading {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    width: 80vw;
+    max-width: 1500px;
+    gap: 2rem;
+}
+
+.grid-container img {
+    display: block;
+    width: 90%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #24505C;
+    font-size: x-large;
+    margin-top: 4rem;
+    height: 30vh;
+    padding-top: 1rem;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
