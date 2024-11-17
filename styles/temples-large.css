@@ -55,7 +55,7 @@ heading {
     display: none;
 }
 
-heading ul {
+.heading ul {
     background-color: #24505C;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ heading ul {
     text-align: center;
 }
 
-heading li {
+.heading li {
     width: 100vw;
     border-top: .2rem solid #fab323;
     padding: 1rem;
@@ -71,7 +71,7 @@ heading li {
     font-family: "Open Sans", sans-serif;
 }
 
-heading li:hover {
+.heading li:hover {
     background-color: #fab323;
     color: black;
     cursor: pointer;
