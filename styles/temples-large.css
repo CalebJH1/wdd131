@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #eeeeee;
+}
+
 h1 {
     font-family: "Open Sans", sans-serif;
     font-size: xxx-large;
@@ -43,8 +47,9 @@ header a {
 }
 
 header a:hover {
-    background-color: #24505C;
-    color: white;
+    background-color: #fab323;
+    color: black;
+    cursor: pointer;
 }
 
 heading {
