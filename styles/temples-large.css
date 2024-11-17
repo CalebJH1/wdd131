@@ -52,8 +52,16 @@ header a:hover {
     cursor: pointer;
 }
 
-heading {
+.menu-icon {
     display: none;
+}
+
+figure {
+    background-color: #24505C;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 .grid-container {
@@ -67,10 +75,12 @@ heading {
 }
 
 .grid-container img {
+    margin: 1rem auto;
     display: block;
     width: 90%;
     min-height: 300px;
     object-fit: cover;
+    border: .5rem solid #fab323;
 }
 
 footer {
@@ -86,4 +96,11 @@ footer > p {
     text-align: center;
     margin-bottom: 1rem;
     font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 1500px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
