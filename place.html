@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan</title>
+    <meta name="description" content="WDD131 Country Page">
+    <meta name="author" content="Caleb Heilmann">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Japan</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- <source media="(min-width: )" srcset=""> -->
+                <source media="(max-width: 500px)" srcset="images/hero-image-portrait.webp">
+                <img src="images/hero-image-landscape.webp" alt="japan">
+            </picture>
+            <div id="data">
+                <div>
+                    <h2>Data</h2>
+                </div>
+                <div class="grid-container">
+                    <div class="left-side">
+                        <p>Area:</p>
+                        <p>Population:<p>
+                        <p>Capital:</p>
+                        <p>Languages:</p>
+                        <p>Currency:</p>
+                        <p>Time Zone:</p>
+                        <p>Calling Code:</p>
+                        <p>Internet TLD:</p>
+                    </div>
+                    <div class="right-side">
+                        <p>377.97K sq km</p>
+                        <p>125.12M</p>
+                        <p>Tokyo</p>
+                        <p>Japanese, English</p>
+                        <p>Yen</p>
+                        <p>Japan Standard Time (JST)</p>
+                        <p>+81</p>
+                        <p>.jp</p>
+                    </div>
+                </div>
+            </div>
+            <div id="weather">
+                <div>
+                    <h2>Weather</h2>
+                </div>
+                <img src="images/weather-cloud-rainbow-icon.svg" alt="weather icon" width="100px">
+                <div class="grid-container">
+                    <div class="left-side">
+                        <p>Temperature:</p>
+                        <p>Conditions:</p>
+                        <p>Wind:</p>
+                        <p>Wind Chill:</p>
+                    </div>
+                    <div class="right-side">
+                        <p id="temperature">-6 ℃</p>
+                        <p>Light Rain</p>
+                        <p id="wind-speed">7 km/h</p>
+                        <p id="wind-chill"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentyear"></span>🌲Caleb Heilmann🌲Washington</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

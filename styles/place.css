@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: papayawhip;
+}
+
+header div {
+    border-bottom: 1em solid #D20103;
+    width: 100vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Dela Gothic One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50pt;
+    color: #D20103;
+}
+
+main {
+    margin: auto;
+    max-width: 3000px;
+}
+
+picture img {
+    position: absolute;
+    width: 100vw;
+    min-height: 855px;
+    max-height: 855px;
+    object-fit: cover;
+    border-bottom: 1em solid #D20103;
+}
+
+#data {
+    position: relative;
+    top: 3vw;
+    left: 3vw;
+    padding: 1.5em;
+    background-color: #ffffffbb;
+    padding-bottom: 10rem;
+    width: 700px;
+}
+
+.grid-container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-container > div:first-child {
+    text-align: right;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.grid-container > div:last-child {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: x-large;
+}
+
+#weather {
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    right: 3vw;
+    bottom: 10vw;
+    padding: 1.5em;
+    background-color: #ffffffbb;
+    padding-bottom: 10rem;
+    width: 700px;
+}
+
+#weather *, #data * {
+    background-color: #ffffff00;
+}
+
+#data > div:first-child, #weather > div:first-child {
+    background-color: #D20103aa;
+    padding: 1em;
+    position: relative;
+    right: 35px;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: x-large;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    bottom: 250px;
+    text-align: center;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-size: x-large;
+    font-style: normal;
+    padding: 1rem;
+}
+
+div > img {
+    display: none;
+}
+
+@media screen and (min-width: 3000px) {
+    picture img {
+        border: 1em solid #D20103;
+        top: 300px;
+        max-width: 3000px;
+    }
+
+    #data {
+        left: 5rem;
+        top: 10rem;
+    }
+
+    #weather {
+        bottom: 3rem;
+    }
+
+    footer {
+        position: relative;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #data, #weather {
+        width: 80vw;
+        padding-bottom: 2rem;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    footer {
+        position: relative;
+        top: 300px;
+        z-index: 1;
+    }
+
+    #data {
+        top: 2em;
+    }
+
+    .grid-container > div:first-child, .grid-container > div:last-child {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    picture img {
+        position: static;
+    }
+
+    #data, #weather {
+        background-color: white;
+        width: 95vw;
+        padding-bottom: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    #data > div:first-child, #weather > div:first-child {
+        background-color: white;
+        position: static;
+        text-align: center;
+    }
+
+    div > img {
+        display: block;
+        margin: auto;
+    }
+
+    footer {
+        top: 0;
+        background-color: #D20103;
+        width: 100%;
+    }
+
+    footer p {
+        color: white;
+    }
+
+    footer * {
+        background-color: #D20103;
+    }
+}
