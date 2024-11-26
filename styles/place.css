@@ -163,7 +163,7 @@ div > img {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     picture img {
         position: static;
     }
