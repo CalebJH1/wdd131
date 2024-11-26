@@ -1,12 +1,17 @@
+:root {
+    --primary-color: #FFEFD5;
+    --secondary-color: #D20103;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: papayawhip;
+    background-color: var(--primary-color);
 }
 
 header div {
-    border-bottom: 1em solid #D20103;
+    border-bottom: 1em solid var(--secondary-color);
     width: 100vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -18,7 +23,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 50pt;
-    color: #D20103;
+    color: var(--secondary-color);
 }
 
 main {
@@ -32,7 +37,7 @@ picture img {
     min-height: 855px;
     max-height: 855px;
     object-fit: cover;
-    border-bottom: 1em solid #D20103;
+    border-bottom: 1em solid var(--secondary-color);
 }
 
 #data {
@@ -112,7 +117,7 @@ div > img {
 
 @media screen and (min-width: 3000px) {
     picture img {
-        border: 1em solid #D20103;
+        border: 1em solid var(--secondary-color);
         top: 300px;
         max-width: 3000px;
     }
@@ -183,7 +188,7 @@ div > img {
 
     footer {
         top: 0;
-        background-color: #D20103;
+        background-color: var(--secondary-color);
         width: 100%;
     }
 
@@ -192,6 +197,10 @@ div > img {
     }
 
     footer * {
-        background-color: #D20103;
+        background-color: var(--secondary-color);
+    }
+
+    #weather > div > p::after {
+        content: url('images/weather-cloud-rainbow-icon.svg');
     }
 }
