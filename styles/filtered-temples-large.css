@@ -1,0 +1,24 @@
+@media only screen and (min-width:769px){
+    .nav-button {
+        display: none;
+    }
+
+    .navi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navi * {
+        padding-right: 5vw;
+    }
+
+    .navi:last-child {
+        padding-right: 0;
+    }
+
+    header {
+        padding: 0 2em;
+    }
+
+}
