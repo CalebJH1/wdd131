@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a product review form that customers will fill out to give us feedback on a certain product.">
+    <meta name="author" content="Caleb Heilmann">
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <p>Product Name</p>
+                    <select id="product-name" name="product-name" required>
+                        <option value="" disabled selected>Choose a Product...</option>
+                    </select>
+            </fieldset>
+            <fieldset class="radio-selection">
+                <p>Overall Rating</p>
+                <div class="flex-container">
+                    <div>
+                        <label for="overall-rating">*</label><br>
+                        <input type="radio" id="onestar" name="overall-rating" value="*" required>
+                    </div>
+                    <div>
+                        <label for="overall-rating">**</label><br>
+                        <input type="radio" id="twostar" name="overall-rating" value="**" required>
+                    </div>
+                    <div>
+                        <label for="overall-rating">***</label><br>
+                        <input type="radio" id="threestar" name="overall-rating" value="***" required>
+                    </div>
+                    <div>
+                        <label for="overall-rating">****</label><br>
+                        <input type="radio" id="fourstar" name="overall-rating" value="****" required>
+                    </div>
+                    <div>
+                        <label for="overall-rating">*****</label><br>
+                        <input type="radio" id="fivestar" name="overall-rating" value="*****" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <p>Date of Installation</p>
+                <label><input type="date" id="date-of-installation" name="date-of-installation" required></label>
+            </fieldset>
+            <fieldset>
+                <p>Which features did you find useful in the product?</p>
+                <p><em>(Check all that apply)</em></p>
+                <div><label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label></div>
+                <div><label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label></div>
+                <div><label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label></div>
+                <div><label><input type="checkbox" id="design" name="design" value="yes"> Design</label></div>
+            </fieldset>
+            <fieldset>
+                <label for="review" class="bold">Written Review <em>(optional)</em></label>
+                <textarea id="review" name="review" rows="4"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="name" class="bold">Your Name <em>(optional)</em></label>
+                <input type="text" id="name" name="name">
+            </fieldset>
+            <input type="submit" value="Send Review">
+        </form>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>🌲Caleb Heilmann🌲Washington</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
