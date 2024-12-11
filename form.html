@@ -20,13 +20,12 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <p>Product Name</p>
-                    <select id="product-name" name="product-name" required>
-                        <option value="" disabled selected>Choose a Product...</option>
-                    </select>
+                <label class="bold">Product Name*<br><select id="product-name" name="product-name" required></label>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
             </fieldset>
             <fieldset class="radio-selection">
-                <p>Overall Rating</p>
+                <p>Overall Rating*</p>
                 <div class="flex-container">
                     <div>
                         <label>*<br><input type="radio" id="onestar" name="overall-rating" value="*" required></label>
@@ -46,8 +45,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <p>Date of Installation</p>
-                <label><input type="date" id="date-of-installation" name="date-of-installation" required></label>
+                <label class="bold">Date of Installation*<br><input type="date" id="date-of-installation" name="date-of-installation" required></label>
             </fieldset>
             <fieldset>
                 <p>Which features did you find useful in the product?</p>
