@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caleb Heilmann">
+    <meta name="description" content="The purpose of the site is to entertain users by asking them for nouns, verbs, adjectives etc. and populating short stories with the user-typed words.">
+    <title>Silly Story Creator - Create</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <script defer src="scripts/creator.js"></script>
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Silly Story Creator</h1>
+        <nav>
+            <ul class="desktop-width">
+                <li><a href="project-home-page.html">Home</a></li>
+                <li><a href="creator.html">Story Creator</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="submission-form.html">Submit a Story</a></li>
+            </ul>
+            <a class="menu-icon">≡</a>
+        </nav>
+    </header>
+    <main>
+        <div class="drop-down-menu invisible">
+            <nav>
+                <ul>
+                    <li><a href="project-home-page.html">Home</a></li>
+                    <li><a href="creator.html">Story Creator</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="submission-form.html">Submit a Story</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h2>Story Creator</h2>
+            <div class="creator-options">
+                <p>Please select from these two options:</p>
+                <div class="buttons">
+                    <button class="choose creator-button">Choose a Story</button>
+                    <button class="random creator-button">Random Story</button>
+                </div>
+            </div>
+            <div class="story-container">
+                
+            </div>
+            <form class="user-input-boxes invisible" method="get">
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentyear"></span>🌲Caleb Heilmann🌲Washington</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

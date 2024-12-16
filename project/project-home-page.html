@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caleb Heilmann">
+    <meta name="description" content="The purpose of the site is to entertain users by asking them for nouns, verbs, adjectives etc. and populating short stories with the user-typed words.">
+    <title>Silly Story Creator - Home</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Silly Story Creator</h1>
+        <nav>
+            <ul class="desktop-width">
+                <li><a href="project-home-page.html">Home</a></li>
+                <li><a href="creator.html">Story Creator</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="submission-form.html">Submit a Story</a></li>
+            </ul>
+            <a class="menu-icon">≡</a>
+        </nav>
+    </header>
+    <main>
+        <div class="drop-down-menu invisible">
+            <nav>
+                <ul>
+                    <li><a href="project-home-page.html">Home</a></li>
+                    <li><a href="creator.html">Story Creator</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="submission-form.html">Submit a Story</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h2>Home</h2>
+            <div class="home-menu">
+                <p>Welcome to the home page of this website. In this website, you can click on "Story Creator" to list nouns, verbs, adjectives etc. to make silly stories,
+                    and the fun part is that you don't know what the story will be like until you start reading it. You can also go to the catalog to see the list of all stories,
+                    or if you want to create your very own story and submit it to the catalog, click on "Submit a Story" and you will be taken to a form to fill out. Have fun!
+                </p>
+                <div class="buttons">
+                    <button onclick="location.href='creator.html'">Story Creator</button>
+                    <button onclick="location.href='catalog.html'">Catalog</button>
+                    <button onclick="location.href='submission-form.html'">Submit a Story</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentyear"></span>🌲Caleb Heilmann🌲Washington</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

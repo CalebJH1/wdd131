@@ -1,0 +1,394 @@
+:root {
+    --background-color: #FFF3D0;
+    --header-footer: #335C67;
+    --paragraph-heading: #9E2A2B;
+    --paragraph-color: #540B0E;
+    --accent-color: #E09F3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--header-footer);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+    font-size: 30pt;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin-right: 8vw;
+    padding-top: 80px;
+}
+
+li:last-child {
+    margin-right: 2vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1rem;
+    font-size: 15pt;
+}
+
+a:hover {
+    color: var(--paragraph-color);
+    background-color: var(--accent-color);
+}
+
+main {
+    width: 100%;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--paragraph-heading);
+    text-align: center;
+    font-size: 40pt;
+    margin-top: 2rem;
+}
+
+.home-menu {
+    display: grid;
+    margin-top: 10rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+}
+
+p {
+    color: var(--paragraph-color);
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20pt;
+    margin: auto;
+    width: 90%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons * {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    width: 90%;
+    height: 15%;
+    border-radius: 50px;
+    background-color: var(--accent-color);
+    font-size: large;
+}
+
+.buttons a {
+    padding: 0;
+}
+
+.buttons button:hover {
+    background-color: var(--paragraph-heading);
+    color: white;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    top: 200px;
+    background-color: var(--header-footer);
+    padding-bottom: 20vh;
+    padding-top: 1rem;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.story-button {
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.story-button p {
+    font-size: 15pt;
+    margin: 0 auto;
+    color: black;
+}
+
+.story-button img {
+    margin: 0 auto;
+    box-shadow: 10px 10px 9px black;
+}
+
+.story-button:hover, .story-button:hover * {
+    background-color: var(--paragraph-heading);
+    color: white;
+    cursor: pointer;
+}
+
+.large-image {
+    width: 500px;
+    display: block;
+    margin: 3rem auto;
+}
+
+.highlighted {
+    color: var(--paragraph-heading);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30pt;
+}
+
+.desktop-width {
+    display: block;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.drop-down-menu {
+    width: 100%;
+    background-color: var(--header-footer);
+}
+
+.drop-down-menu ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-down-menu li {
+    margin-right: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.drop-down-menu li:hover, .drop-down-menu li:hover a {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    color: var(--paragraph-color);
+}
+
+.drop-down-menu a {
+    padding-left: 42%;
+    padding-right: 42%;
+}
+
+.creator-options {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.creator-options .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.creator-button {
+    margin: auto;
+    width: 40%;
+}
+
+.creator-options p {
+    text-align: center;
+}
+
+.user-input-boxes {
+    margin: 10vh auto;
+    padding: 2rem;
+    background-color: var(--header-footer);
+    width: 400px;
+    border-radius: 25px;
+}
+
+.user-input-boxes fieldset {
+    border-style: none;
+}
+
+.user-input-boxes label {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+.user-input-boxes input {
+    width: 100%;
+}
+
+.next, .submit-button {
+    font-family: "Kanit", serif;
+    margin-top: 2rem;
+    width: 100%;
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    font-size: 18pt;
+}
+
+.next:hover, .submit-button:hover {
+    background-color: var(--accent-color);
+    color: var(--paragraph-color);
+    cursor: pointer;
+}
+
+.submit-button {
+    margin: 0;
+}
+
+.submission-form {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1rem solid var(--header-footer);
+}
+
+.submission-form label {
+    margin-top: 1rem;
+    display: block;
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--paragraph-color);
+}
+
+#title {
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+}
+
+#image {
+    width: 100%;
+}
+
+#to-page-two, #to-page-two *, #to-page-three, #to-page-three *, #submit-form, #submit-form * {
+    display: block;
+    margin: auto;
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: var(--accent-color);
+}
+
+
+#to-page-two:hover, #to-page-two:hover *, #to-page-three:hover, #to-page-three:hover *, #submit-form:hover, #submit-form:hover * {
+    background-color: var(--paragraph-heading);
+    color: white;
+    cursor: pointer;
+}
+
+.instructions {
+    font-size: 15pt;
+}
+
+.page-two label, .page-two input, .page-three label, .page-three input {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .desktop-width {
+        display: none;
+    }
+
+    .home-menu {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .creator-options {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .creator-options .buttons {
+        flex-direction: column;
+    }
+
+    .creator-button {
+        width: 100%;
+    }
+    
+    .buttons {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .drop-down-menu a {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .large-image {
+        width: 250px;
+    }
+}
+
+.invisible {
+    display: none;
+}
